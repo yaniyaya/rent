@@ -1,0 +1,231 @@
+.section{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 150px 0;
+    overflow: hidden;
+    background-image: url('./photo.png');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 110% 0;
+}
+/* .section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./photo.png');
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: 110% 0;
+  z-index: -1;
+  opacity: 0.5;       
+} */
+.wrapper{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all ease 5s;
+}
+
+.tittle{
+    width: 70%;
+    font-size: 64px;
+    font-weight: 700;
+    color: black;
+}
+.text{
+    margin-top: 50px;
+    width: 70%;
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+}
+
+.button_wrapper{
+    margin-top: 50px;
+    width: 70%;
+    display: flex;
+}
+.button{
+  margin-bottom: 15px;
+    width: 350px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5bc260;
+    color: white;
+    margin-right: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.button a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1424px) {
+  .section {
+    background-position-y: 30%;
+    background-size: 50%;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .section{
+    background-image: none;
+  }
+  .section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./photo.png');
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: 110% 90%;
+    z-index: -1;
+    opacity: 0.5;       
+  }
+  
+  .button_wrapper{
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .tittle{
+    width: 100%;
+  }
+  .section{
+    background-size: 75%;
+    background-position: 130% 100%;
+  
+  }
+  .text{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .section::before{
+    background-size: 90%;
+    background-position: 130% 110%;
+  
+  }
+  .button{
+    width: 80%;
+  }
+}
+@media screen and (max-width: 800px) {
+
+  .section::before{
+    background-size: 120%;
+    background-position: 0% 130%;
+  
+  }
+
+}
+@media screen and (max-width: 700px) {
+
+  .section::before{
+    background-size: 150%;
+    background-position: -20% 130%;
+  
+  }
+  .tittle{
+    font-size: 48px;
+  }
+
+}
+@media screen and (max-width: 600px) {
+
+  .section::before{
+    background-size: 190%;
+    background-position: 10% 130%;
+  
+  }
+  .text{
+    font-size: 22px;
+  }
+  .button{
+    width: 90%;
+  }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .section::before{
+    background-size: 250%;
+    background-position: 20% 100%;
+  
+  }
+  .tittle{
+    font-size: 32px;
+  }
+   .text{
+    font-size: 20px;
+  }
+  .button{
+    width: 100%;
+  }
+
+}
+@media screen and (max-width: 400px) {
+
+  .section::before{
+    background-size: 300%;
+    background-position: 20% 100%;
+  }
+  .tittle{
+    font-size: 24px;
+  }
+   .text{
+    font-size: 18px;
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+
+  .section::before{
+    background-size: 380%;
+    background-position: 30% 100%;
+  }
+  .tittle{
+    font-size: 24px;
+  }
+   .text{
+    font-size: 18px;
+  }
+
+}
+@media screen and (max-width: 300px) {
+
+  .section::before{
+    background-size: 450%;
+    background-position: 30% 100%;
+  }
+  .tittle{
+    font-size: 24px;
+  }
+   .text{
+    font-size: 18px;
+  }
+
+}
